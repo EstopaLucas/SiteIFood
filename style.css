@@ -1,9 +1,12 @@
+/* Reset de estilos e configurações globais */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "SulSans", sans-serif;
 }
+
+/* Configurações de altura e largura para elementos principais */
 html,
 body,
 #root {
@@ -11,17 +14,19 @@ body,
 	width: 100%;
 }
 
+/* Estilos para links */
 a {
 	text-decoration: none;
 	color: inherit;
 }
+
+/* Cursor pointer para botões e links */
 button,
 a {
 	cursor: pointer;
 }
-:root {
-}
 
+/* Definição de variáveis de cores */
 :root {
 	--red-default: #ea1d2c;
 	--hover-red: #c2121f;
@@ -39,7 +44,7 @@ a {
 	--bg-gray: #f7f7f7;
 }
 
-
+/* Estilos da seção 'food-links' */
 .food-links {
 	display: flex;
 	justify-content: space-between;
@@ -55,6 +60,7 @@ a {
 	flex-direction: column;
 	justify-content: flex-end;
 }
+
 .food-link article {
 	width: 50%;
 	top: -40px;
@@ -77,6 +83,7 @@ a {
 	color: var(--text);
 	margin-bottom: 20px;
 }
+
 .food-link article > a > button {
 	color: var(--white);
 	font-family: "SulSans Bold", sans-serif;
@@ -97,12 +104,14 @@ a {
 	width: 50%;
 }
 
+/* Estilos responsivos para 'food-links' */
 @media screen and (max-width: 900px) {
 	.food-links {
 		height: 800px;
 		justify-content: space-around;
 		flex-direction: column;
 	}
+
 	.food-link {
 		width: 90%;
 		position: relative;
@@ -112,6 +121,7 @@ a {
 	}
 }
 
+/* Estilos da seção 'food-lover' */
 .food-lover {
 	display: grid;
 	grid-template-columns: 20% 10% 70%;
@@ -139,6 +149,7 @@ a {
 	color: var(--text);
 	margin-bottom: 20px;
 }
+
 .food-lover article > a > button {
 	color: var(--white);
 	font-family: "SulSans Bold", sans-serif;
@@ -156,6 +167,7 @@ a {
 	width: 100%;
 }
 
+/* Estilos responsivos para 'food-lover' */
 @media screen and (max-width: 900px) {
 	.food-lover {
 		display: grid;
@@ -167,6 +179,7 @@ a {
 	}
 }
 
+/* Estilos do banner 'banner-ifood-card' */
 .banner-ifood-card {
 	margin: 0 auto;
 }
@@ -175,12 +188,14 @@ a {
 	width: 100%;
 }
 
+/* Estilos responsivos para 'banner-ifood-card' */
 @media screen and (max-width: 900px) {
 	.banner-ifood-card {
 		display: none;
 	}
 }
 
+/* Estilos do rodapé */
 footer {
 	padding: 100px 0px;
 }
@@ -193,6 +208,7 @@ footer a:hover {
 	color: var(--dark-gray);
 }
 
+/* Estilos da seção 'cities' */
 .cities {
 	display: flex;
 	flex-direction: column;
@@ -221,6 +237,7 @@ footer a:hover {
 	border-bottom: 1px var(--border) solid;
 }
 
+/* Estilos responsivos para 'cities' */
 @media screen and (max-width: 900px) {
 	.cities {
 		padding: 0px 10px;
@@ -230,6 +247,7 @@ footer a:hover {
 	}
 }
 
+/* Estilos da seção 'footer-about' */
 .footer-about {
 	display: flex;
 	flex-direction: row;
@@ -248,12 +266,7 @@ footer a:hover {
 	padding: 25px 25px 25px 0px;
 }
 
-.social-medias {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-}
-
+/* Estilos responsivos para 'footer-about' */
 @media screen and (max-width: 900px) {
 	.footer-about li {
 		padding: 25px 0px 25px 25px;
@@ -275,6 +288,7 @@ footer a:hover {
 	}
 }
 
+/* Estilos da seção 'food-copy' */
 .food-copy {
 	margin-top: 50px;
 }
@@ -289,6 +303,7 @@ footer a:hover {
 	margin: 0 10px;
 }
 
+/* Estilos responsivos para 'food-copy' */
 @media screen and (max-width: 900px) {
 	.food-copy ul {
 		display: flex;
@@ -300,24 +315,29 @@ footer a:hover {
 	}
 }
 
+/* Estilos do container geral */
 .container {
 	width: 1200px;
 }
 
+/* Estilos do corpo do documento */
 body {
 	scroll-behavior: smooth;
 }
 
+/* Estilos do conteúdo principal */
 main {
 	padding-top: 80px;
 }
 
+/* Estilos responsivos para o container */
 @media screen and (max-width: 1000px) {
 	.container {
 		width: 100%;
 	}
 }
 
+/* Estilos do cabeçalho */
 .header-menu {
 	padding: 40px 32px;
 	background-color: var(--bg-gray);
@@ -365,20 +385,22 @@ ul {
 	background-color: var(--hover-red);
 }
 
+/* Estilos responsivos para o menu */
 @media screen and (max-width: 900px) {
 	.header-menu > nav > ul:first-child li:not(li:first-child) {
 		display: none;
 	}
 }
 
+/* Estilos da seção 'options' */
 .options {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
 	text-align: center;
 }
+
 .container-options {
 	width: 842px;
 	margin-top: -100px;
@@ -397,7 +419,6 @@ ul {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-around;
-
 	position: relative;
 	border-radius: 15px;
 	padding-left: 15px;
@@ -444,6 +465,7 @@ ul {
 	background-color: var(--dark-green);
 }
 
+/* Estilos responsivos para 'options' */
 @media screen and (max-width: 900px) {
 	.container-options {
 		width: 100%;
@@ -463,6 +485,7 @@ ul {
 	}
 }
 
+/* Estilos dos 'mini-cards' */
 .mini-cards-options {
 	display: flex;
 	flex-direction: row;
@@ -517,6 +540,7 @@ ul {
 	margin-left: 10px;
 }
 
+/* Estilos responsivos para 'mini-cards' */
 @media screen and (max-width: 900px) {
 	.mini-cards-options {
 		flex-direction: column;
@@ -528,16 +552,15 @@ ul {
 	}
 }
 
+/* Estilos da seção 'search' */
 .search {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
 	height: 500px;
 	padding-bottom: 50px;
 	background-color: var(--bg-gray);
-
 	text-align: center;
 	position: relative;
 }
@@ -577,7 +600,6 @@ ul {
 	width: 100%;
 	outline: none;
 	border: none;
-
 	padding: 16px;
 }
 
@@ -595,6 +617,7 @@ ul {
 	background-color: var(--dark-red);
 }
 
+/* Estilos responsivos para 'search' */
 @media screen and (max-width: 900px) {
 	.title-search {
 		width: 90%;
@@ -609,5 +632,3 @@ ul {
 		margin-top: 10px;
 	}
 }
-
-
